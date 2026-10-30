@@ -1,0 +1,9 @@
+DOOMX Root Optimizer v1.3.3 - compile fix package
+
+This package contains the v1.3.2 FPS overlay toggle implementation. The bundled MainActivity.kt has been checked for the reported unescaped $f and $d Kotlin interpolation errors; neither appears in this source file.
+
+Also includes Android 6/API 23-compatible foreground-service stopping and version bump to 1.3.3 (versionCode 6).
+
+Build with: gradle --no-daemon assembleDebug
+
+If GitHub Actions still reports the same MainActivity.kt line numbers, confirm the workflow is building this ZIP's MainActivity.kt and not an older/different branch or commit.
